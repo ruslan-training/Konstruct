@@ -536,7 +536,7 @@ input {
         transform: translate(0px, -24px);
         position: fixed;
         top: 80px;
-        right: 15px;
+        right: 25px;
         transition: transform .3s ease;
     }
     .activeBurger::before {
