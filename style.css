@@ -613,4 +613,51 @@ input {
         font-size: 16px;
         letter-spacing: 0;
     }
+    .service-preview-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-el {
+        max-width: 290px;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .service-el:last-child {
+        margin: 0;
+    }
+    .get-touch {
+        height: 250px;
+    }
+    .newsletter-body {
+        flex-direction: column;
+    }
+    .newsletter-title {
+        margin: 0 0 15px 0;
+    }
+    .footer-body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-title,.links-title {  
+        display: none;
+    }
+    .footer-logo-box{
+        margin: 0 0 15px 0;
+    }
+    .links {
+        margin-bottom: 15px;
+        max-width: 290px;
+        width: 100%;
+    }
+    .links-item{
+        margin: 0;
+        text-align: center;
+    }
+    .links-items {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .socials {
+        flex-direction: row;
+    }
 }
