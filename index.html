@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
     <title>Konstruct</title>
 </head>
 <body>
@@ -21,14 +22,22 @@
   </div>
   <div class="nav-bar">
     <div class="container">
-      <div class="nav-body">
+      <div class="nav-body" id="app">
         <div class="head-logo black">
           <a href="#"><img src="img/logo-black.svg" alt="" class="logo"></a>
         </div>
-        <div class="burger-menu">
+        <div class="burger-menu"
+        :class="{activeBurger: topMenu}"
+        @click="topMenu = !topMenu"
+        
+        
+        >
           <nav></nav>
         </div>
-        <nav class="top-menu">
+        <nav class="top-menu"
+        :class="{activeMenu: topMenu}"
+        
+        >
           <ul class="menu-list">
             <li class="menu-list__el"><a href="#">HOME</a></li>
             <li class="menu-list__el"><a href="#">ABOUT</a></li>
@@ -36,7 +45,12 @@
             <li class="menu-list__el"><a href="#">WORK</a></li>
             <li class="menu-list__el"><a href="#">CONTACT</a></li>
           </ul>
+          <div class="adaptive-logo"
+          :class="{activeLogo: topMenu}">
+            <a href="#"><img src="img/logo-black.svg" alt="" class="logo"></a>
+          </div>
         </nav>
+       
       </div>  
     </div>  
   </div>
@@ -204,4 +218,5 @@
   </div>
 </div>    
 </body>
+<script src="script.js"></script>
 </html>
