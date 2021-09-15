@@ -617,6 +617,14 @@ input {
         flex-direction: column;
         align-items: center;
     }
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-text {
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
     .service-el {
         max-width: 290px;
         width: 100%;
